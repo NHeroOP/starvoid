@@ -100,6 +100,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
   }
   body {
     @apply bg-background text-foreground;

@@ -347,9 +347,11 @@ export default function Home() {
         <Footer/>
         
       </div>
-      <StarsBackground/>
-      <Particles staticity={25} />
-      <ShootingStars minDelay={3000} maxDelay={7000} />
+      <div className="fixed inset-0 w-screen h-screen pointer-events-none">
+        <ShootingStars minDelay={3000} maxDelay={7000} />
+        <Particles staticity={25} />
+        <StarsBackground/>
+      </div>
     </div>
   );
 }
